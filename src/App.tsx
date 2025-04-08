@@ -1,6 +1,6 @@
 import React, { useState, createContext, useContext } from "react";
 import { generateItems, renderLog } from "./utils";
- 
+
 // 타입 정의
 interface Item {
   id: number;
