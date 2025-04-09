@@ -28,5 +28,5 @@ export function shallowEquals<T extends Record<string, any>>( // 제네릭 타�
     if (!objB.hasOwnProperty(key) || objA[key] !== objB[key]) return false;
   }
 
-  return objA === objB;
+  return true;
 }
