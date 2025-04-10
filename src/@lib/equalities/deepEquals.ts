@@ -20,7 +20,7 @@ export function deepEquals<T>(objA: T, objB: T): boolean {
       return false; // 객체의 키 개수가 다른 경우 처리
 
     return Object.keys(objA as object).every(
-      (key) => deepEquals(objA[key as keyof T], objB[key as keyof T]) // TODO: 'objA' is possibly 'undefined'.
+      (key) => deepEquals(objA[key as keyof T], objB[key as keyof T]), // TODO: 'objA' is possibly 'undefined'.
     );
   }
 
